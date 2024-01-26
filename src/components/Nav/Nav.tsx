@@ -19,7 +19,7 @@ export default async function Nav() {
         <ul className="flex m-0">
           {navbarItems?.map(item => {
             return (
-              <li className="mr-6">
+              <li key={item.url} className="mr-6">
                 <Link href={String(item.url)} className="text-zinc-600 dark:text-zinc-300 text-inherit">
                   { item.label }
                 </Link>
