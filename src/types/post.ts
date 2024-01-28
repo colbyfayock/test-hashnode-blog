@@ -19,4 +19,14 @@ export interface Post {
   ogMetaData: {
     image: string;
   }
+  author?: {
+    id: string;
+    name: string;
+    profilePicture: string;
+    socialMediaLinks?: {
+      twitter: string;
+      youtube: string;
+      github: string;
+    }
+  }
 }

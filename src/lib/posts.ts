@@ -70,6 +70,16 @@ export async function getPostBySlug(slug: Post['slug']) {
             ogMetaData {
               image
             }
+            author {
+              id
+              name
+              profilePicture
+              socialMediaLinks {
+                twitter
+                youtube
+                github
+              }
+            }
           }
         }
       }
