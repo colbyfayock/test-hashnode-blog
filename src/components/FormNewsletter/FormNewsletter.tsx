@@ -36,7 +36,7 @@ const FormNewsletter = ({ className }: FormNewsletterProps) => {
           {state.status === 'ERROR' && (
             <>
               {state.errors?.length > 0 && state.errors.map((error: string) => {
-                return <p className="bg-red-100 mt-6 px-4 py-2 rounded">{ error }</p>
+                return <p key={error} className="bg-red-100 mt-6 px-4 py-2 rounded">{ error }</p>
               })}
               {(!state.errors || state.errors?.length === 0) && (
                 <p className="bg-red-100 mt-6 px-4 py-2 rounded">Something went wrong.</p>
