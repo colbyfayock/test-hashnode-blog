@@ -10,6 +10,7 @@ const config: Config = {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
   ],
 }
